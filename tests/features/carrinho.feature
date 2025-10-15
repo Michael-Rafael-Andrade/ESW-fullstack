@@ -5,7 +5,7 @@ Funcionalidade: Realizar Compras
     Para que possa concluir a compras
 
     Cenário: Compra bem-sucedida
-        Dado que o usuário acesso a página do carrinho
+        Dado que o usuário acessa a página do carrinho
         E adicionou 2 camisas e 1 tênis ao carrinho
         Quando ele informa o CEP "90010000"
         E clica em "Calcular Frete"
