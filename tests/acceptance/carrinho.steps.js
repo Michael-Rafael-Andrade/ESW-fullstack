@@ -15,7 +15,6 @@ defineFeature( feature, (test) => {
         });
 
     test("Compra bem-sucedida", ({given, and, when, then}) => {
-
         given("que o usuário acessou a página do carrinho", () =>{ 
             expect(carrinho).toBeDefined();
          });
@@ -46,5 +45,5 @@ defineFeature( feature, (test) => {
             total = carrinho.total();
             expect(total).toBe(Number(valorEsperado));
          });
-    });
+    });    
 });
