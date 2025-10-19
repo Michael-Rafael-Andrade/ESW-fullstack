@@ -11,8 +11,8 @@ defineFeature(feature, (test) => {
 
     beforeAll(async() => {
         browser = await puppeteer.launch({
-            headless: false,  // headless parametro que vai indicar se quer ver as ações navegador ou não quer (true não quer ver, false eu quero ver no navegador) 
-            slowMo: 30,
+            headless: true,  // headless parametro que vai indicar se quer ver as ações navegador ou não quer (true não quer ver, false eu quero ver no navegador) 
+            // slowMo: 30,
         });
         page = await browser.newPage(); // aguardando abrir uma nova aba
         await page.goto(filePath); // Nesta aba irei abrir url da const filePath (linha 10)
@@ -61,7 +61,7 @@ defineFeature(feature, (test) => {
             const total = await page.$eval("#total", el => parseFloat(el.textContent));
             expect(total.toFixed(2)).toBe(valorEsperado);
 
-            await new Promise( r => setTimeout(r, 3000));
+            // await new Promise( r => setTimeout(r, 3000));
         });
     }, 10000);
 });
