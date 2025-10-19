@@ -5,10 +5,10 @@ Funcionalidade: Realizar Compras
     Para que possa concluir a compras
 
     Cenário: Compra bem-sucedida
-        Dado que o usuário acessa a página do carrinho
+        Dado que o usuário acessou a página do carrinho
         E adicionou 2 camisas e 1 tênis ao carrinho
         Quando ele informa o CEP "90010000"
         E clica em "Calcular Frete"
-        E clica em "Compra"
+        E clica em "Comprar"
         Então o sistema deve exibir a mensagem "Compra realizada com sucesso!"
         E o total deve ser R$ "325.00"
